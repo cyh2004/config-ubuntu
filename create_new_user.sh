@@ -1,9 +1,10 @@
-# Usage: USERNAME=ababab sh create_new_user.sh
+# Usage: USER_NAME=ababab sh create_new_user.sh
 
-USERNAME="${USERNAME:-default_user}"
+USER_NAME="rosayxy"
 
-sudo useradd -m -s /bin/zsh ${USERNAME}
-mkdir -p /home/${USERNAME}/.ssh
-touch /home/${USERNAME}/.ssh/authorized_keys
-chmod 700 /home/${USERNAME}/.ssh && chmod 600 /home/${USERNAME}/.ssh/authorized_keys
-chown -R ${USERNAME}:${USERNAME} /home/${USERNAME}/.ssh
+sudo useradd -m -s /bin/zsh ${USER_NAME}
+mkdir -p /home/${USER_NAME}/.ssh
+touch /home/${USER_NAME}/.ssh/authorized_keys
+chmod 700 /home/${USER_NAME}/.ssh && chmod 600 /home/${USER_NAME}/.ssh/authorized_keys
+chown -R ${USER_NAME}:${USER_NAME} /home/${USER_NAME}/.ssh
+
